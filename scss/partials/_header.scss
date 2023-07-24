@@ -1,0 +1,39 @@
+/* ------------------------------------------------------------HEADER---------------------------------------------------------------------------------- */
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #340A12;
+    padding: 30px;
+    /* gap: 1000px; */
+    justify-content: space-between
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section {
+    padding: 16px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.section:hover {
+    background-color: $colorfondo;
+
+}
+
+.selected {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+:link {
+    text-decoration: none;
+}

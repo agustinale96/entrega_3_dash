@@ -1,0 +1,284 @@
+@import "./partials/colors";
+@import "./partials/buttons";
+@import "./partials/separadores";
+@import "./partials/header";
+@import "./partials/typo";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------------------------------HERO---------------------------------------------------------------------------------- */
+
+body {
+    background-color: #1C0000;
+    justify-content: center;
+    align-items: center;
+}
+
+// Prueba de anidación
+
+.contenedorvideo {
+    height: 650px;
+    width: 100%;
+    overflow: hidden;
+
+    video {
+        width: 100%;
+    }
+}
+
+.absolute {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    padding-top: 7%;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+
+@keyframes aparecer {
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(30px);
+        opacity: 1;
+    }
+  
+}
+
+.animate__headShake:hover {
+    transform: scale(1.2)
+}
+
+/* ------------------------------------------------------------ITEMS---------------------------------------------------------------------------------- */
+
+.contenedoritem {
+    border: #8D2C41 solid 0.3px;
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    margin: 8px;
+    padding: 32px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    box-shadow: 0px 4px 8px 12px rgba(255, 255, 255, 0.01);
+    margin-bottom: 100px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px;
+    text-align: center;
+}
+
+.contenedoritem:hover {
+    background-color: #250505;
+}
+
+
+.item-icono {
+    width: 150px;
+}
+
+/* ------------------------------------------------------------COMPANIES---------------------------------------------------------------------------------- */
+
+.companias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.icon-compania {
+    padding: 24px;
+    align-items: center;
+}
+
+
+
+/* ------------------------------------------------------------PERSONAS---------------------------------------------------------------------------------- */
+
+.personas {
+    /* background-color: #ffcc00; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 36px;
+}
+
+.persona {
+    /* background-color: #300909; */
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    gap: 4px;
+    text-align: left;
+    border: #8D2C41 solid 0.3px;
+    box-shadow: 0px 4px 8px 6px rgba(255, 255, 255, 0.01);
+    border-radius: 4px;
+}
+
+.persona:hover {
+    background-color: #250505;
+}
+
+.imagenpersona {
+    width: 100px;
+    border-radius: 4px;
+    padding-bottom: 16px;
+}
+
+.ejemplo {
+    background-color: rgb(34, 241, 248);
+    border: #1C0000 1px;
+}
+
+/* ------------------------------------------------------------EVENTOS---------------------------------------------------------------------------------- */
+
+.date {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event {
+    /* background-color: darkcyan; */
+    height: 200px;
+    align-items: center;
+    border-radius: 8px;
+    border: #8D2C41 solid 0.3px;
+    box-shadow: 0px 4px 8px 6px rgba(255, 255, 255, 0.01);
+    border-radius: 4px;
+}
+
+.datetext {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.datetitle {
+    font-weight: bold;
+}
+
+.datecontent {
+    text-align: left;
+    align-items: flex-start
+}
+
+/* ------------------------------------------------------------INPUTS---------------------------------------------------------------------------------- */
+
+.contenedorinput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    padding: 16px;
+    background-color: #2D080F;
+    border: 0px;
+    color: #FFEEF2;
+}
+
+/* ------------------------------------------------------------Post---------------------------------------------------------------------------------- */
+
+.posts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 36px;
+}
+
+.post {
+    border: #8D2C41 solid 0.3px;
+    border-radius: 8px;
+    /* background-color: cadetblue; */
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.post:hover {
+    background-color: #250505;
+}
+
+.post_img_up {
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.post_down {
+    /* background-color: #8D2C41; */
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border-radius: 0px 0px 8px 8px;
+
+}
+
+.post_cta {
+    margin: 0px;
+}
+
+/* ------------------------------------------------------------FOOTER---------------------------------------------------------------------------------- */
+
+.my_footer {
+    margin-top: 100px;
+    background-color: $colorfondo ;
+    height: 100px;
+}
+
+/* ------------------------------------------------------------Query Header---------------------------------------------------------------------------------- */
+
+@media (max-width: 730px) {
+    .sections {
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .section {
+        padding: 4px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .terceary {
+        margin: 0px 0px 0px 0px;
+        margin-left: 0px;
+    }
+}

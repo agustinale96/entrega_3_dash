@@ -1,0 +1,70 @@
+// Habia definido los botones y los traje a todos a esta sección
+
+.primary {
+    margin: 60px;
+    padding: 16px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 30px;
+    border: 0px;
+    font-size: 24px;
+    color: #FFEEF2;
+    /* background-color: #000000; */
+    background-color: rgb(150, 2, 2);
+    z-index: 999;
+}
+
+.secundary {
+    margin: 40px;
+    padding: 8px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 30px;
+    border: 0px;
+    font-size: 20px;
+    color: #FFEEF2;
+    background-color: rgb(150, 2, 2);
+}
+
+.terceary {
+    display: flex;
+    height: 40px;
+    margin: 0px;
+    margin-left: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 16px;
+    border: 0px;
+    font-size: 16px;
+    color: #FFEEF2;
+    background-color: rgb(150, 2, 2);
+    align-items: center
+}
+
+.post_boton {
+    display: flex;
+    height: 40px;
+    margin: 0px;
+    margin-left: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 16px;
+    border: 0px;
+    font-size: 16px;
+    color: #FFEEF2;
+    border: #8D2C41 solid 0.3px;
+    background-color: #1C0000;
+    align-items: center
+}
+
+.post_boton:hover {
+    background-color: rgb(190, 1, 1);
+}
+
+.terceary:hover {
+    background-color: rgb(190, 1, 1);
+}
+
+.secundary:hover {
+    background-color: rgb(190, 1, 1);
+}

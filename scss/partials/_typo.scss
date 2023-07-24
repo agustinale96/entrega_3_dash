@@ -1,0 +1,71 @@
+@import url(./_colors.scss);
+
+//Importar toda la sección de textos
+
+@font-face {
+    font-family: sfpd-medium;
+    src: url(../resources/sf-pro-display-font/SF-Pro-Display-Medium.otf);
+}
+
+@font-face {
+    font-family: sfpd-regular;
+    src: url(../resources/sf-pro-display-font/SF-Pro-Text-Regular.otf);
+}
+
+@font-face {
+    font-family: sfpd-light;
+    src: url(../resources/sf-pro-display-font/SF-Pro-Display-Light.otf);
+}
+
+@font-face {
+    font-family: sfpd-ulight;
+    src: url(../resources/sf-pro-display-font/SF-Pro-Display-Ultralight.otf);
+}
+
+h1 {
+    font-size: 3.052rem;
+    color: $colorprincipal;
+    font-family: sfpd-regular;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.441rem;
+    color: $colorprincipal;
+    font-family: sfpd-regular;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.953rem;
+    color: $colorprincipal;
+    font-family: sfpd-ulight;
+    text-align: center;
+
+}
+
+h4 {
+    font-size: 1.563rem;
+    color: $colorprincipal;
+    font-family: sfpd-light;
+}
+
+h5 {
+    font-size: 1.25rem;
+    color: $colorprincipal;
+    font-family: sfpd-light;
+
+}
+
+h6 {
+    font-size: 1rem;
+    color: $colorprincipal;
+    font-family: sfpd-light;
+
+}
+
+small,
+.text_small {
+    font-size: 0.8rem;
+}
