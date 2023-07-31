@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Dash Blockchain - Fast, Secure, Transparent Cryptocurrency for Modern Transactions.">
+    <meta name="description"
+        content="Explore Dash Blockchain - Fast, Secure, Transparent Cryptocurrency for Modern Transactions.">
     <meta name="keywords" content="Dash blockchain, cryptocurrency, payments, transactions, decentralized, technology">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./resources/logo_chico.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
     <title>Dash Blockchain</title>
 </head>
 
@@ -29,6 +32,21 @@
             <a href="./pages/events.html">
                 <h5 class="section">Events</h5>
             </a>
+
+            <div class="dropdown">
+                <button class="menuboton">
+                    <img src="./resources/swm icon pack/menuhamburger.svg" alt="Icono personalizado">
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="./pages/about_us.html">About us</a>
+                    <a href="./pages/blog.html">Blog</a>
+                    <a href="./pages/events.html">Events</a>
+                    <a class="ham_item_join" href="./pages/join_us.html"><span class="ham_text_join">Join
+                            dash</span></a>
+                </div>
+                <script src="script.js"></script>
+            </div>
             <button class="terceary"><a href="./pages/join_us.html">
                     <h5 style="margin-bottom: 0px;">Join Dash.</h5>
                 </a></button>
@@ -36,60 +54,60 @@
     </header>
 
     <main>
-        <div class="absolute">
-            <div>
+        <div class="hero">
+            <div class="hero_content">
                 <h1>Welcome to the Blockchain of the Future</h1>
-                <h3>Experience instant transactions and unmatched performance.</h3>
-                <button class="primary animate__animated animate__headShake" >Join Dash.</button>
+                <h2>Instant transactions and unmatched performance.</h2>
+                <button class="primary animate__animated animate__headShake">Join Dash.</button>
             </div>
-        </div>
-
-        <div class="contenedorvideo">
-            <video autoplay loop muted>
-                <source src="./resources/fondo_video_hero.mp4" type="video/mp4">
-            </video>
+            <div class="contenedorvideo">
+                <video autoplay loop muted>
+                    <source class="video" src="./resources/fondo_video_hero.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
 
         <div class="separador"></div>
+        <div class="separador"></div>
 
-        <div>
-            <h4 class="aligncenter" >Trusted by leading companies</h4>
-            <div class="companias">
-                <img class="icon-compania" src="./resources/icons/circle.svg" alt="circle_icon">
-                <img class="icon-compania" src="./resources/icons/google.svg" alt="google_icon">
-                <img class="icon-compania" src="./resources/icons/jump.svg" alt="jump_icon">
-                <img class="icon-compania" src="./resources/icons/meta.svg" alt="meta_icon">
-                <img class="icon-compania" src="./resources/icons/stripe.svg" alt="stripe">
+        <div class="container contenedor_compania">
+            <h3 class="aligncenter">Trusted by leading companies</h3>
+            <div class="companias row">
+                <img class="col-4 col-sm-2 icon-compania" src="./resources/icons/circle.svg" alt="circle_icon">
+                <img class="col-4 col-sm-2 icon-compania" src="./resources/icons/google.svg" alt="google_icon">
+                <img class="col-4 col-sm-2 icon-compania" src="./resources/icons/jump.svg" alt="jump_icon">
+                <img class="col-4 col-sm-2 icon-compania" src="./resources/icons/meta.svg" alt="meta_icon">
+                <img class="col-4 col-sm-2 icon-compania" src="./resources/icons/stripe.svg" alt="stripe">
             </div>
         </div>
 
         <div class="separador2"></div>
         <div class="separador2"></div>
 
+        
         <div class="aligncenter">
             <h2>The disruptive benefits of blockchain technology.</h2>
-            <h4>Why choose dash.</h4>
+            <h3>Why choose dash.</h3>
         </div>
 
         <div class="items">
             <div class="contenedoritem">
                 <img class="item-icono" src="./resources/swm icon pack/bolt.svg" alt="bolt">
                 <br>
-                <h5>Unlimited speed, enabled by blockchain's innovation.</h5>
+                <h4>Unlimited speed, enabled by blockchain's innovation.</h4>
             </div>
             <div class="contenedoritem">
                 <img class="item-icono" src="./resources/swm icon pack/lockon.svg" alt="lockon">
                 <br>
-                <h5>Unyielding security, enhanced by advanced encryption.</h5>
+                <h4>Unyielding security, enhanced by advanced encryption.</h4>
             </div>
             <div class="contenedoritem">
                 <img class="item-icono" src="./resources/swm icon pack/coin.svg" alt="coin">
                 <br>
-                <h5>Zero commission, ensures free transactions for all.</h5>
+                <h4>Zero commission, ensures free transactions for all.</h4>
             </div>
         </div>
     </main>
-
 
     <footer>
         <div class="my_footer"></div>
