@@ -13,39 +13,58 @@ body {
   background-color: $colorbordooscuro;
   justify-content: center;
   align-items: center;
+}
 
 
-  // -----------------------------------------------------------------HERO---------------------------------------------------
+// -----------------------------------------------------------------HERO---------------------------------------------------
 
-  .hero {
-    background-color: $colorbordooscuro;
+.hero {
+  background-color: $colorbordooscuro;
 
-    .hero_content {
-      width: 100%;
-      text-align: center;
-      padding-top: 4%;
-      animation: aparecer 2s forwards;
-      z-index: 2;
-      position: absolute;
+  .hero_content {
+    width: 100%;
+    text-align: center;
+    padding-top: 4%;
+    animation: aparecer 2s forwards;
+    z-index: 2;
+    position: absolute;
+
+    @media (max-width: $ancho-maximo) {
+      color: black;
     }
+  }
 
-    .contenedorvideo {
-      z-index: 1;
-      height: 650px;
+  .contenedorvideo {
+    z-index: 1;
+    height: 650px;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+
+    video {
       width: 100%;
       overflow: hidden;
-      top: 0;
+      bottom: -350px;
+      object-fit: cover;
 
-      video {
-        width: 100%;
-        overflow: hidden;
-        bottom: -350px;
+      @media (max-width: $ancho-maximo) {
+        display: none;
       }
     }
+
+    @media (max-width: $ancho-maximo) {
+      height: 550px;
+    }
+  }
+
+  @media (max-width: $ancho-maximo) {
+    background-color: $colorfondo;
   }
 }
 
-  // ----------------------------------------------------------------COMPANIES---------------------------------------------------
+
+// ----------------------------------------------------------------COMPANIES---------------------------------------------------
+
 .companias {
   display: flex;
   flex-direction: row;
@@ -63,7 +82,8 @@ body {
   }
 }
 
-  // ----------------------------------------------------------------ITEMS---------------------------------------------------
+// ----------------------------------------------------------------ITEMS---------------------------------------------------
+
 .contenedoritem {
   border: #8D2C41 solid 0.3px;
   width: 272px;
@@ -75,7 +95,7 @@ body {
   padding-top: 48px;
   padding-bottom: 64px;
   box-shadow: 0px 4px 8px 12px rgba(255, 255, 255, 0.01);
-  margin-bottom: 100px;
+  margin-bottom: 16px;
   position: relative;
   align-items: center;
   text-align: center;
@@ -84,55 +104,48 @@ body {
     background-color: #250505;
   }
 
-  .items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 60px;
-    text-align: center;
+  .item-icono {
+    max-width: 80px;
   }
 
-  @media (max-width: 850px) {
-    border: #8D2C41 solid 0.3px;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    border-radius: 4px;
-    margin: 8px;
-    padding: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    box-shadow: 0px 4px 8px 12px rgba(255, 255, 255, 0.01);
-    margin-bottom: 16px;
-    position: relative;
-    align-items: center;
-    text-align: center;
-
-    &:hover {
-      background-color: #250505;
-    }
-
-    .items {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 60px;
-      text-align: center;
-    }
+  h4 {
+    margin-top: 10px;
   }
 }
 
-  // ----------------------------------------------------------------PERSONAS---------------------------------------------------
+.items {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .contenedoritem {
+    width: auto;
+    padding: 16px;
+  }
+
+  .items {
+    flex-direction: column;
+  }
+}
+
+
+
+// ----------------------------------------------------------------PERSONAS---------------------------------------------------
+
+
 .personas {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 36px;
+  gap: 24px;
 
   .persona {
     border: #8D2C41 solid 0.3px;
     border-radius: 8px;
-    padding: 0%;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -149,39 +162,43 @@ body {
   }
 }
 
-  // ----------------------------------------------------------------EVENTOS---------------------------------------------------
+
+
+// ----------------------------------------------------------------EVENTOS---------------------------------------------------
 .date {
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
 
+.event {
+  height: auto;
+  align-items: center;
+  border-radius: 8px;
+  border: $colorprincipal solid 0.3px;
+  box-shadow: 0px 4px 8px 6px rgba(255, 255, 255, 0.01);
+  border-radius: 4px;
+}
+
+.datetext {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+@media (max-width: 1000px) {
   .event {
-    height: auto;
-    align-items: center;
-    border-radius: 8px;
-    border: #8D2C41 solid 0.3px;
-    box-shadow: 0px 4px 8px 6px rgba(255, 255, 255, 0.01);
-    border-radius: 4px;
-
-    .datetext {
-      padding-left: 50px;
-      padding-right: 50px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  }
-
-  @media (max-width: 1000px) {
-    .event {
-      padding: 20px;
-    }
+    padding: 20px;
   }
 }
 
-  // ----------------------------------------------------------------INPUTS---------------------------------------------------
+
+// ----------------------------------------------------------------INPUTS---------------------------------------------------
 .contenedorinput {
   display: flex;
   flex-direction: column;
@@ -199,7 +216,7 @@ body {
   }
 }
 
-  // ----------------------------------------------------------------POST------------------------------------------------------
+// ----------------------------------------------------------------POST------------------------------------------------------
 .posts {
   display: flex;
   flex-direction: row;
@@ -234,14 +251,14 @@ body {
   }
 }
 
-  // ---------------------------------------------------------------FOOTER------------------------------------------------------
+// ---------------------------------------------------------------FOOTER------------------------------------------------------
 .my_footer {
   margin-top: 100px;
   background-color: $colorfondo;
   height: 100px;
 }
 
-  // ---------------------------------------------------------------SCROLL------------------------------------------------------
+// ---------------------------------------------------------------SCROLL------------------------------------------------------
 ::-webkit-scrollbar {
   width: 10px;
 }
